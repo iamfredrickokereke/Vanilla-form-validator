@@ -18,11 +18,8 @@ const showError = (input, message) => {
 const showSuccess = (input) => {
     const formControl = input.parentElement;
 
-    formControl.className = 'form-control success';
-
-    
+    formControl.className = 'form-control success';    
 }
-
 
 form.addEventListener('submit', e => {
     e.preventDefault();
@@ -32,6 +29,24 @@ form.addEventListener('submit', e => {
         showError(username, 'username is required!');
     } else{
         showSuccess(username);
+    }
+
+    if (email.value === '') {
+        showError(email, 'email is required!');
+    } else{
+        showSuccess(email);
+    }
+
+    if (password.value === '') {
+        showError(password, 'password is required!');
+    } else{
+        showSuccess(password);
+    }
+
+    if (password2.value === '') {
+        showError(password2, 'confirm the second password!');
+    } else{
+        showSuccess(password2);
     }
     
 })
