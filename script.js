@@ -32,12 +32,14 @@ form.addEventListener('submit', e => {
 
     if (username.value === '') {
         showError(username, 'username is required!');
-    } else{
+    }else{
         showSuccess(username);
     }
 
     if (email.value === '') {
         showError(email, 'email is required!');
+    }else if(!isEmailValid(email.value)){
+        showError(email, 'Email is not valid')
     } else{
         showSuccess(email);
     }
