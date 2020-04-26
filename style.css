@@ -4,6 +4,7 @@
 :root{
     --success-color: #2ecc71;
     --error-color: #e74c3c;
+    --line-color: #3498db;
 }
 *{
     box-sizing: border-box;
@@ -62,7 +63,7 @@ h2{
 }
 
 .form-control input:focus{
-    border-bottom: 1px solid green;
+    border-bottom: 1px solid var(--line-color);
 }
 
 
