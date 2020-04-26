@@ -14,14 +14,24 @@ const showError = (input, message) => {
 
     small.innerText = message;
 }
+
+const showSuccess = (input) => {
+    const formControl = input.parentElement;
+
+    formControl.className = 'form-control success';
+
+    
+}
+
+
 form.addEventListener('submit', e => {
     e.preventDefault();
     // console.log('submitted');
 
     if (username.value === '') {
-        showError(username, 'username is required!')
+        showError(username, 'username is required!');
     } else{
-        showSuccess(username)
+        showSuccess(username);
     }
     
 })
