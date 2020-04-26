@@ -66,3 +66,18 @@ small{
     display: none;
 }
 
+/* .form-control.success small{
+    /* display: block; */
+    /* border-color: greenyellow; */
+/* }  */
+
+.form-control.success input{
+
+    border-color: #2ecc71;
+    /* border-bottom: 3px solid#2ecc71; */
+    /* transition: 1.5s ease-out; */
+}
+
+.form-control.error input{
+    border-color: #e74c3c;
+}
