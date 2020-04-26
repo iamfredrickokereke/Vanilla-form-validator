@@ -51,7 +51,7 @@ form.addEventListener('submit', e => {
     }
 
     if (password2.value === '') {
-        showError(password2, 'confirm the second password!');
+        showError(password2, 'password 2 is required!');
     } else{
         showSuccess(password2);
     }
