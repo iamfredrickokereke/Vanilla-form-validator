@@ -27,11 +27,16 @@ const isEmailValid = email => {
 }
 
 
+const checkRequiredInput = (inputArray) =>{
+    console.log(inputArray);
+    
+}
+
 // check required fields for the inputs
 form.addEventListener('submit', e => {
     e.preventDefault();
     // console.log('submitted');
 
-    checkRequiredInput()
+    checkRequiredInput([username, password, email])
     
 })
