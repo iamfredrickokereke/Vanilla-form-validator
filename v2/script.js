@@ -43,6 +43,12 @@ const checkRequiredInput = (inputArray) =>{
     
 }
 
+const checkLength = (input, min, max) =>{
+    if (input.value.length < min) {
+        showError(input, `${input} must be greater than 3 and less than 15`)
+    }
+}
+
 // check required fields for the inputs
 form.addEventListener('submit', e => {
     e.preventDefault();
