@@ -61,6 +61,8 @@ form.addEventListener('submit', e => {
     checkRequiredInput([username, password, email, password2])
     checkLength(username, 3, 15);
     checkLength(password, 6, 25);
+    checkEmail(email);
+   
 })
 
 
