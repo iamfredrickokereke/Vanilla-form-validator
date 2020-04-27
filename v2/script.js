@@ -32,6 +32,12 @@ const checkRequiredInput = (inputArray) =>{
     inputArray.forEach(input => {
         console.log(inputArray);
 
+        if (input.value.trim() === '') {
+            showError(input, `This field is required`)
+        } else{
+            showSuccess(input)
+        }
+
     });
     
 }
