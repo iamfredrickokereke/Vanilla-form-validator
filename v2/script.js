@@ -28,7 +28,11 @@ const isEmailValid = email => {
 
 
 const checkRequiredInput = (inputArray) =>{
-    console.log(inputArray);
+
+    inputArray.array.forEach(input => {
+        console.log(inputArray);
+
+    });
     
 }
 
@@ -37,6 +41,6 @@ form.addEventListener('submit', e => {
     e.preventDefault();
     // console.log('submitted');
 
-    checkRequiredInput([username, password, email])
+    checkRequiredInput([username, password, email, password2])
     
 })
