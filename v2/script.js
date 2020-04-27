@@ -32,7 +32,7 @@ const checkEmail = input => {
 
 
 const checkPasswordsMatch = (input1, input2) => {
-    if (input.value !== input1.value) {
+    if (input1.value !== input2.value) {
         showError(input, `Passwords do not match`)
     }
 }
