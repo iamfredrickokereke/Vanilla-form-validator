@@ -30,10 +30,11 @@ const isEmailValid = email => {
 const checkRequiredInput = (inputArray) =>{
 
     inputArray.forEach(input => {
-        console.log(inputArray);
+        // console.log(inputArray);
 
         if (input.value.trim() === '') {
-            showError(input, `This field is required`)
+            // showError(input, `${input.id} is required`)
+            showError(input, `${getFieldName(input)} is required`)
         } else{
             showSuccess(input)
         }
@@ -50,3 +51,8 @@ form.addEventListener('submit', e => {
     checkRequiredInput([username, password, email, password2])
     
 })
+
+
+const getFieldName = input => {
+    return input.id.charAt(0).toUpperCase;
+}
