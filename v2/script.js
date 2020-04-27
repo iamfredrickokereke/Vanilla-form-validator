@@ -31,6 +31,12 @@ const checkEmail = input => {
 }
 
 
+const checkPasswordsMatch = (input1, input2) => {
+    if (input.value !== input1.value) {
+        showError(input, `Passwords do not match`)
+    }
+}
+
 const checkRequiredInput = (inputArray) =>{
 
     inputArray.forEach(input => {
