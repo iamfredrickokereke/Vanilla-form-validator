@@ -29,7 +29,7 @@ const isEmailValid = email => {
 
 const checkRequiredInput = (inputArray) =>{
 
-    inputArray.array.forEach(input => {
+    inputArray.forEach(input => {
         console.log(inputArray);
 
     });
