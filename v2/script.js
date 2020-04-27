@@ -49,7 +49,8 @@ form.addEventListener('submit', e => {
     // console.log('submitted');
 
     checkRequiredInput([username, password, email, password2])
-    
+    checkLength(username, 3, 15);
+    checkLength(password, 6, 25);
 })
 
 
